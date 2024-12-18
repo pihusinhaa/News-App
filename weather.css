@@ -1,0 +1,110 @@
+/* General Styling */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8faff; /* Pastel blue */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Navigation Bar */
+nav {
+  width: 100%;
+  background-color: #cdb4db; /* Pastel purple */
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav button {
+  background-color: #ffadad; /* Pastel pink */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav button a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav button:hover {
+  background-color: #ffd6a5; /* Pastel orange */
+  transform: scale(1.05);
+}
+
+nav button:active {
+  transform: scale(0.95);
+  background-color: #cdb4db; /* Pastel purple */
+}
+
+/* Weather App Container */
+.weather-app {
+  background-color: #ffffff; /* White for contrast */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 30px 40px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+.weather-app h1 {
+  font-size: 24px;
+  color: #ffafcc; /* Pastel pink */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.weather-app input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ffd6a5; /* Pastel orange */
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: #f8edeb; /* Soft pastel background */
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.weather-app input[type="text"]:focus {
+  border-color: #bde0fe; /* Pastel blue */
+  box-shadow: 0 0 8px rgba(189, 224, 254, 0.5); /* Soft glow */
+}
+
+/* Get Weather Button */
+.weather-app button {
+  background-color: #bde0fe; /* Pastel blue */
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.weather-app button:hover {
+  background-color: #cdb4db; /* Pastel purple */
+  transform: scale(1.05);
+}
+
+.weather-app button:active {
+  transform: scale(0.95);
+  background-color: #ffd6a5; /* Pastel orange */
+}
